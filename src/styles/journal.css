@@ -3,14 +3,35 @@
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
+header {
+    position:fixed;
+    left:0px;
+    top:0px;
+    height:100px;
+    width:100%;
+    background:rgb(0, 0, 0);
+    overflow: hidden;
+ }
+
+ .headshot {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 225%;
+    margin-top: -350px;
+    margin-left: -350px;
+
+}
 
 h1 {
     font-family: 'Permanent Marker', cursive;
+    padding-top: 100px;
 }
 
 .mainForm {
     display: flex;
     flex-flow: column wrap;
+    
 }
 
 label {
@@ -45,6 +66,9 @@ fieldset {
     border: 3px solid white;
     margin-bottom: 10px; 
 }
+
+
+
 
 /* #journalEntry {
     min-width: 125px;

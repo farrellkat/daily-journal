@@ -1,0 +1,53 @@
+* {
+    background-color: rgb(124, 38, 38);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.mainForm {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.submitButton {
+    width: 150px;
+    margin-top: 10px;
+}
+
+#journalDate, 
+#conceptsInput,
+#journalEntry,
+#moodBox,
+.submitButton
+ {
+    border-radius: 5px;
+    background-color: snow;
+    color: black;
+    min-width: 125px;
+    min-height: 15px;
+    border: 2px solid rgb(0, 0, 0)
+}
+
+fieldset {
+    border-radius: 5px;
+    border: 3px solid white;
+    margin-bottom: 10px; 
+}
+
+/* #journalEntry {
+    min-width: 125px;
+    min-height: 15px;
+} */
+

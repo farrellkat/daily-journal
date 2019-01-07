@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/journal.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Quicksand|Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Daily Journal</h1>
+    <form action="">
+        <div class=mainForm>
+        <!--Date of Entry input-->
+        <fieldset>
+            <label for="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <!--Concepts covered input field-->
+        <fieldset>
+            <label for="concepts">Concepts Covered</label>
+            <input type="text" name="conceptsInput" id="conceptsInput">
+        </fieldset>
+        <!--Journal Entry input field-->
+        <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <textarea type ="text" rows=3 name="journalEntry" id="journalEntry"></textarea> </textarea> 
+        </fieldset>
+       <!--Mood select entry-->
+        <fieldset>
+            <label for="mood">Mood For The Day</label>
+            <select name="moodBox" id="moodBox">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="excited">Excited</option>
+                <option value="nervous">Nervous</option>
+                <option value="tired">Tired</option>
+                <option value="bored">Bored</option>
+            </select>
+        </fieldset>
+        <button class="submitButton">Record Journal Entry</button>
+    </div>
+            
+
+    </form>
+    
+</body>
+</html>

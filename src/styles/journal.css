@@ -4,33 +4,42 @@
     font-family: 'Quicksand', sans-serif;
 }
 header {
-    position:fixed;
     left:0px;
     top:0px;
     height:100px;
     width:100%;
-    background:rgb(0, 0, 0);
+    position: absolute;
     overflow: hidden;
+    margin: auto;  
  }
 
  .headshot {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 225%;
-    margin-top: -350px;
-    margin-left: -350px;
-
+    width: 150%;
+    margin-top: -525px;
+    margin-left: -375px;
 }
 
 h1 {
     font-family: 'Permanent Marker', cursive;
-    padding-top: 100px;
+    text-align: right;
+    position: relative;
+    background-color: transparent;
+    margin-right: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;    
 }
 
 .mainForm {
     display: flex;
     flex-flow: column wrap;
+    margin-top: 125px;
     
 }
 
@@ -45,6 +54,7 @@ label {
 .submitButton {
     width: 150px;
     margin-top: 10px;
+    padding: 5px;
 }
 
 #journalDate, 

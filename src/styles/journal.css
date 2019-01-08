@@ -3,6 +3,7 @@
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
+
 header {
     left:0px;
     top:0px;
@@ -11,21 +12,23 @@ header {
     position: absolute;
     overflow: hidden;
     margin: auto;  
- }
+    background-image: url(https://static1.squarespace.com/static/57e29df6893fc04835042997/57e2a798be6594e3889c9973/57e2a924c534a53fcc39f660/1474472258610/James+Farrell14297.jpg?format=1500w);
+    background-size: inherit;
+    background-position-y: -300px;
+}
 
- .headshot {
+ /* .headshot {
     display: flex;
     justify-content: center;
     align-content: center;
     width: 150%;
     margin-top: -525px;
     margin-left: -375px;
-}
+} */
 
 h1 {
     font-family: 'Permanent Marker', cursive;
     text-align: right;
-    position: relative;
     background-color: transparent;
     margin-right: 100px;
     border-radius: 5px;
@@ -40,7 +43,6 @@ footer {
     display: flex;
     flex-flow: column wrap;
     margin-top: 125px;
-    
 }
 
 label {
@@ -77,11 +79,22 @@ fieldset {
     margin-bottom: 10px; 
 }
 
+@media (max-width: 600px) {
 
+    header {
+        left:0px;
+        top:0px;
+        height:100px;
+        width:100%;
+        position: absolute;
+        overflow: hidden;
+        margin: auto;  
+        background-image: none;
+    }
 
-
-/* #journalEntry {
-    min-width: 125px;
-    min-height: 15px;
-} */
-
+    h1 {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        background-color: transparent;
+    }
+}

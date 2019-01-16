@@ -17,7 +17,8 @@ header {
     background-position-y: -300px;
 }
 
- /* .headshot {
+
+/* .headshot {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -64,7 +65,7 @@ label {
 #journalEntry,
 #moodBox,
 .submitButton
- {
+{
     border-radius: 5px;
     background-color: snow;
     color: black;
@@ -79,8 +80,42 @@ fieldset {
     margin-bottom: 10px; 
 }
 
-@media (max-width: 600px) {
+.journalHeaderDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.printedJournalEntry {
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+}
 
+.printedConcepts {
+    text-decoration: underline;
+    font-size: 24px;
+
+}
+
+.printedDate {
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+.printedMood {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+.printedJournalEntry {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    
     header {
         left:0px;
         top:0px;

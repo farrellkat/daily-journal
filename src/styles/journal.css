@@ -94,6 +94,7 @@ fieldset {
 }
 
 .printedConcepts {
+    font-family: sans-serif;
     text-decoration: underline;
     font-size: 24px;
 

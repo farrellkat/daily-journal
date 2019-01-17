@@ -1,4 +1,5 @@
 const button = document.getElementById("submitButton")
+let journalArray = []
 
 const makeJournalEntryComponent = (journalEntries) => {
     // main div
@@ -59,7 +60,9 @@ button.onclick = (e) => {
         mood: mood
     }
 
+    journalArray.push(journalEntries)
     makeJournalEntryComponent(journalEntries)
     document.getElementById("myForm").reset();
+    console.log(journalArray)
 
 }

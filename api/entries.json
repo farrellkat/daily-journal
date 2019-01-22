@@ -5,6 +5,12 @@
             "concepts": "JSON and Postman",
             "entry": "Learned how to fetch, post, and put JSON info",
             "mood": "Excited"
+        },
+        {
+            "date": "01/22/2019",
+            "concepts": "entries",
+            "entry": "blah blah blah",
+            "mood": "Excited"
         }
     ]
 }

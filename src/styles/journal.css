@@ -107,10 +107,13 @@ fieldset {
     margin-bottom: 25px;
 }
 .printedJournalEntry {
-    border: 1px solid white;
-    padding: 5px;
-    margin-top: 10px;
+    border: 5px solid #51a5bf;
+    background-color: white;
+    color: black;
+    padding: 10px;
     display: flex;
+    margin: 20px 40px;
+    border-radius: 5px;
     animation: yourAnimation 2s 1 0s linear;
 }
 

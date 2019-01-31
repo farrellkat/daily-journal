@@ -1,3 +1,4 @@
+//Create HTML component
 const makeJournalEntryComponent = (entries) => {
     return `
     <section class="printedJournalEntry">

@@ -21,7 +21,8 @@ button.onclick = (e) => {
 //Post HTML component to DOM
 let domFunction = (parsedEntries) => {
     console.table(parsedEntries)
-    parsedEntries.forEach(entry => {
+    revEntries = parsedEntries.reverse()
+    revEntries.forEach(entry => {
         let domEntry = makeJournalEntryComponent(entry)
         document.querySelector(".entryLog").innerHTML += domEntry
         document.getElementById("myForm").reset();

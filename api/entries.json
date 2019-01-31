@@ -13,6 +13,13 @@
       "entry": "Tested adding a keyframe to my journal so that the entries fade in. Seems to work!",
       "mood": "happy",
       "id": 2
+    },
+    {
+      "date": "2019-01-31",
+      "concepts": "Reversing Arrays",
+      "entry": "Just tested using the .reverse() function to make sure my latest entry appears on top.",
+      "mood": "happy",
+      "id": 3
     }
   ]
 }

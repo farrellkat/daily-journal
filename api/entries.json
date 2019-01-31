@@ -1,16 +1,18 @@
 {
-    "entries": [
-        {
-            "date": "01/21/2019",
-            "concepts": "JSON and Postman",
-            "entry": "Learned how to fetch, post, and put JSON info",
-            "mood": "Excited"
-        },
-        {
-            "date": "01/22/2019",
-            "concepts": "entries",
-            "entry": "blah blah blah",
-            "mood": "Excited"
-        }
-    ]
+  "entries": [
+    {
+      "date": "2019-01-30",
+      "concepts": "Fetch Post",
+      "entry": "Worked on getting my journal to post all of my entries to a JSON database. Finally got it to work!",
+      "mood": "excited",
+      "id": 1
+    },
+    {
+      "date": "2019-01-31",
+      "concepts": "Keyframes",
+      "entry": "Tested adding a keyframe to my journal so that the entries fade in. Seems to work!",
+      "mood": "happy",
+      "id": 2
+    }
+  ]
 }

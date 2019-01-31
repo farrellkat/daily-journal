@@ -1,29 +1,26 @@
+// set button to variable
 const button = document.getElementById("submitButton")
-let journalArray = []
-
-button.onclick = (e) => {
-    e.preventDefault()
-
-
+//click button
+button.onclick = (e) => { 
 
     let date = document.getElementById("journalDate").value
     let concepts = document.getElementById("conceptsInput").value
     let entry = document.getElementById("journalEntry").value
     let mood = document.getElementById("moodBox").value
-
+//make object
     let journalEntries =
     {
-        date: date,
-        concepts: concepts,
-        entry: entry,
-        mood: mood
+        "date": date,
+        "concepts": concepts,
+        "entry": entry,
+        "mood": mood
     }
-    journalArray.push(journalEntries)
+//post object to JSON
+    postEntry(journalEntries)
 }
-
+//Post HTML component to DOM
 let domFunction = (parsedEntries) => {
     console.table(parsedEntries)
-    console.log(parsedEntries)
     parsedEntries.forEach(entry => {
         let domEntry = makeJournalEntryComponent(entry)
         document.querySelector(".entryLog").innerHTML += domEntry

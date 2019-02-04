@@ -10,4 +10,10 @@ API.getJournalEntries().then(parsedEntries => {
     domFunction(parsedEntries)
     })
 
-
+    document.querySelector("#radioBox").addEventListener("click", (e) => {
+       let clickedMood = document.querySelector("input[name='moodButton']:checked").value
+        document.querySelector(".entryLog").innerHTML = ""
+        API.getJournalEntries().then(parsedEntries => {
+            domFunction(parsedEntries.filter(entry => entry.mood === clickedMood))
+            })
+    })

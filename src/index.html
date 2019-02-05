@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +9,70 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Quicksand|Open+Sans" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>Daily Journal</h1>
         <!-- <img class="headshot" src="https://static1.squarespace.com/static/57e29df6893fc04835042997/57e2a798be6594e3889c9973/57e2a924c534a53fcc39f660/1474472258610/James+Farrell14297.jpg?format=1500w"> -->
-    </header>     
+    </header>
     <form action="" id="myForm">
         <div class="mainForm" id="mainForm">
-        <!--Date of Entry input-->
-        <fieldset>
-            <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-        <!--Concepts covered input field-->
-        <fieldset>
-            <label for="concepts">Concepts Covered</label>
-            <input type="text" name="conceptsInput" id="conceptsInput">
-        </fieldset>
-        <!--Journal Entry input field-->
-        <fieldset>
-            <label for="journalEntry">Journal Entry</label>
-            <textarea type ="text" rows=3 name="journalEntry" id="journalEntry"></textarea> </textarea> 
-        </fieldset>
-       <!--Mood select entry-->
-        <fieldset>
-            <label for="mood">Mood For The Day</label>
-            <select name="moodBox" id="moodBox">
-                <option value="happy">Happy</option>
-                <option value="sad">Sad</option>
-                <option value="excited">Excited</option>
-                <option value="nervous">Nervous</option>
-                <option value="tired">Tired</option>
-                <option value="bored">Bored</option>
-            </select>
-        </fieldset>
-        <button id="submitButton">Record Journal Entry</button>
-    </div>
-    <article class="entryLog"></article>
-    <footer>
-        <h6>&copy;2019 James Farrell</h6>
-    </footer>
+            <!--Date of Entry input-->
+            <fieldset>
+                <label for="journalDate">Date of Entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+            <!--Concepts covered input field-->
+            <fieldset>
+                <label for="concepts">Concepts Covered</label>
+                <input type="text" name="conceptsInput" id="conceptsInput">
+            </fieldset>
+            <!--Journal Entry input field-->
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea type="text" rows=3 name="journalEntry" id="journalEntry"></textarea> </textarea>
+            </fieldset>
+            <!--Mood select entry-->
+            <fieldset>
+                <label for="mood">Mood For The Day</label>
+                <select name="moodBox" id="moodBox">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="excited">Excited</option>
+                    <option value="nervous">Nervous</option>
+                    <option value="tired">Tired</option>
+                    <option value="bored">Bored</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Filter Journal Entries By Mood</legend>
+                <div id="radioBox">
+                    <input type="radio" id="mood-happy" name="moodButton" value="happy">
+                    <label for="mood1">Happy</label>
+                    <hr/>   
+                    <input type="radio" id="mood-sad" name="moodButton" value="sad">
+                    <label for="mood2">Sad</label>
+                    <hr/>   
+                    <input type="radio" id="mood-excited" name="moodButton" value="excited">
+                    <label for="mood3">Excited</label>
+                    <hr/>   
+                    <input type="radio" id="mood-nervous" name="moodButton" value="nervous">
+                    <label for="mood4">Nervous</label>
+                    <hr/>   
+                    <input type="radio" id="mood-tired" name="moodButton" value="tired">
+                    <label for="mood5">Tired</label>
+                    <hr/>   
+                    <input type="radio" id="mood-bored" name="moodButton" value="bored">
+                    <label for="mood6">Bored</label>
+                    <hr/>   
+                </div>
+            </fieldset>
+            <button id="submitButton">Record Journal Entry</button>
+        </div>
+        <article class="entryLog"></article>
+        <footer>
+            <h6>&copy;2019 James Farrell</h6>
+        </footer>
 
     </form>
 </body>
@@ -55,4 +80,5 @@
 <script src="scripts/entryComponent.js"></script>
 <script src="scripts/entriesDOM.js"></script>
 <script src="scripts/journal.js"></script>
+
 </html>

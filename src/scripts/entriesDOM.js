@@ -20,7 +20,6 @@ button.onclick = (e) => {
 }
 //Post HTML component to DOM
 let domFunction = (parsedEntries) => {
-    console.table(parsedEntries)
     revEntries = parsedEntries.reverse()
     revEntries.forEach(entry => {
         let domEntry = makeJournalEntryComponent(entry)

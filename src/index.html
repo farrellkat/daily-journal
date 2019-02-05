@@ -44,31 +44,39 @@
                     <option value="bored">Bored</option>
                 </select>
             </fieldset>
-            <fieldset>
-                <legend>Filter Journal Entries By Mood</legend>
-                <div id="radioBox">
-                    <input type="radio" id="mood-happy" name="moodButton" value="happy">
-                    <label for="mood1">Happy</label>
-                    <hr/>   
-                    <input type="radio" id="mood-sad" name="moodButton" value="sad">
-                    <label for="mood2">Sad</label>
-                    <hr/>   
-                    <input type="radio" id="mood-excited" name="moodButton" value="excited">
-                    <label for="mood3">Excited</label>
-                    <hr/>   
-                    <input type="radio" id="mood-nervous" name="moodButton" value="nervous">
-                    <label for="mood4">Nervous</label>
-                    <hr/>   
-                    <input type="radio" id="mood-tired" name="moodButton" value="tired">
-                    <label for="mood5">Tired</label>
-                    <hr/>   
-                    <input type="radio" id="mood-bored" name="moodButton" value="bored">
-                    <label for="mood6">Bored</label>
-                    <hr/>   
-                </div>
-            </fieldset>
+            <section id="filterContainers">
+                <fieldset class="radioContainer">
+                    <legend>Filter Journal Entries By Mood</legend>
+                    <div id="radioBox">
+                        <input type="radio" id="mood-happy" name="moodButton" value="happy">
+                        <label for="mood1">Happy</label>
+
+                        <input type="radio" id="mood-sad" name="moodButton" value="sad">
+                        <label for="mood2">Sad</label>
+
+                        <input type="radio" id="mood-excited" name="moodButton" value="excited">
+                        <label for="mood3">Excited</label>
+
+                        <input type="radio" id="mood-nervous" name="moodButton" value="nervous">
+                        <label for="mood4">Nervous</label>
+
+                        <input type="radio" id="mood-tired" name="moodButton" value="tired">
+                        <label for="mood5">Tired</label>
+
+                        <input type="radio" id="mood-bored" name="moodButton" value="bored">
+                        <label for="mood6">Bored</label>
+
+                    </div>
+                </fieldset>
+                <fieldset class="searchContainer">
+                    <legend>Search Journal Entries</legend>
+                    <input type="text" id="searchField">
+                </fieldset>
+            </section>
             <button id="submitButton">Record Journal Entry</button>
         </div>
+
+
         <article class="entryLog"></article>
         <footer>
             <h6>&copy;2019 James Farrell</h6>

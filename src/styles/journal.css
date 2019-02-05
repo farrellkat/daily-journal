@@ -100,11 +100,25 @@ fieldset {
     margin-bottom: 10px; 
 }
 
+#filterContainers {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.searchContainer,
+.radioContainer {
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+
 #radioBox {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-      
+    justify-content: space-between; 
 }
 
 .journalHeaderDiv {

@@ -15,7 +15,7 @@
         <h1>Daily Journal</h1>
         <!-- <img class="headshot" src="https://static1.squarespace.com/static/57e29df6893fc04835042997/57e2a798be6594e3889c9973/57e2a924c534a53fcc39f660/1474472258610/James+Farrell14297.jpg?format=1500w"> -->
     </header>
-    <form action="" id="myForm">
+    <div id="myForm">
         <div class="mainForm" id="mainForm">
             <!--Date of Entry input-->
             <fieldset>
@@ -30,7 +30,7 @@
             <!--Journal Entry input field-->
             <fieldset>
                 <label for="journalEntry">Journal Entry</label>
-                <textarea type="text" rows=3 name="journalEntry" id="journalEntry"></textarea> </textarea>
+                <textarea type="text" rows=3 name="journalEntry" id="journalEntry"></textarea>
             </fieldset>
             <!--Mood select entry-->
             <fieldset>
@@ -44,7 +44,11 @@
                     <option value="bored">Bored</option>
                 </select>
             </fieldset>
+           
+           <!--Box that contains mood filter and search bar-->
             <section id="filterContainers">
+                
+                <!--Radio buttons-->
                 <fieldset class="radioContainer">
                     <legend>Filter Journal Entries By Mood</legend>
                     <div id="radioBox">
@@ -65,14 +69,17 @@
 
                         <input type="radio" id="mood-bored" name="moodButton" value="bored">
                         <label for="mood6">Bored</label>
-
                     </div>
                 </fieldset>
+                
+                <!--Search bar-->
                 <fieldset class="searchContainer">
                     <legend>Search Journal Entries</legend>
                     <input type="text" id="searchField">
                 </fieldset>
             </section>
+            
+            <!--submit button-->
             <button id="submitButton">Record Journal Entry</button>
         </div>
 
@@ -82,11 +89,11 @@
             <h6>&copy;2019 James Farrell</h6>
         </footer>
 
-    </form>
+    </div>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/entryComponent.js"></script>
+    <script src="scripts/entriesDOM.js"></script>
+    <script src="scripts/journal.js"></script>
 </body>
-<script src="scripts/data.js"></script>
-<script src="scripts/entryComponent.js"></script>
-<script src="scripts/entriesDOM.js"></script>
-<script src="scripts/journal.js"></script>
 
 </html>
